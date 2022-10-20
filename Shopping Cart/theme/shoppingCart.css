@@ -1,0 +1,78 @@
+
+nav.bg-light{
+    background-color: white !important;
+    padding: 30px;
+}
+
+div.banner{
+    background-image: url(./img/Websites.png);
+    background-size: cover;
+     background-position: center; 
+
+
+}
+div.input{
+    width: 500px;
+    height: 350px;
+    color: white;
+    padding: 50px;
+}
+
+div.inf{
+    background: linear-gradient(55deg, rgb(150, 38, 125),
+    rgb(233, 114, 134));
+    height: 66px;
+    color: white;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+}
+button.btn-outline-danger{
+    background: linear-gradient(55deg, rgb(114, 30, 96),
+    rgb(233, 114, 134));
+    color: white;
+    width: 200px;
+
+}
+
+.btn-secondary{
+    background-color: white !important ;
+    border-color: white !important;
+  
+}
+
+svg.bi-cart{
+    color: black;
+
+}
+
+div.dropdown-center div#shopping_cart{
+    display: none;
+}
+div.dropdown-center:hover div#shopping_cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+    
+}
+table{
+    width: 100%;
+    color: rgb(61, 69, 77);
+}
+
+.btn-outline-secondary{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-link{
+    color: black !important;
+}
