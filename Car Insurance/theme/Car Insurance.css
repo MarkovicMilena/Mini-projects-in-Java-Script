@@ -8,10 +8,11 @@ body{
 #left{
     width: 300px;
     height: 450px;
-    background-color: rgb(133, 184, 231);
+    background-color: rgb(128, 182, 233);
     margin-top: 100px;
     margin-left: 100px;
     color: white;
+    border-radius: 10%;
 }
 .btn-outline-light{
     width: 280px;
@@ -23,5 +24,8 @@ h4{
     margin-bottom: 10px !important;
 }
 #spinner{
-    margin-left: 110px;
+    margin: auto;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
 }

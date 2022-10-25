@@ -14,7 +14,6 @@ let make = document.querySelector('.form-select');
 let year = document.getElementById('years');
 
 
-
 //event listeners
 
 document.addEventListener('DOMContentLoaded', loadedFunction);
@@ -53,11 +52,17 @@ function validation() {
     if (year.value === 'choose') {
         year.style.borderColor = 'red';
     }
-    else {
+    if (make.value === 'select' && year.value !== 'choose') {
+        year.style.borderColor = 'white';
+    }
+    if (make.value !== 'select' && year.value === 'choose') {
+        make.style.borderColor = 'white';
+    }
+    else if (make.value !== 'select' && year.value !== 'choose') {
         let radioButton = document.querySelector('input[name="flexRadioDefault"]:checked').value;
 
         resultFunction(make, year, radioButton);
-
+       
     }
 
 }
@@ -128,6 +133,10 @@ function completeResult(make, year, radioButton, result_price) {
         m_result = 'Europoean';
     }
 
+    let paragraph4 = document.createElement('p');
+    paragraph4.textContent = 'Total price: ' +  result_price;
+    newElement.appendChild(paragraph4);
+
     let paragraph = document.createElement('p');
     paragraph.textContent = 'Make: ' +  m_result;
     newElement.appendChild(paragraph);
@@ -141,10 +150,9 @@ function completeResult(make, year, radioButton, result_price) {
     paragraph3.textContent = 'Level: ' +  radioButton;
     newElement.appendChild(paragraph3);
 
-    let paragraph4 = document.createElement('p');
-    paragraph4.textContent = 'Total price: ' +  result_price;
-    newElement.appendChild(paragraph4);
+
     }, 2000);
 
-
 }
+
+
