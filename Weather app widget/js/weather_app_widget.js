@@ -143,7 +143,7 @@ function windowResize() {
    document.getElementById("division").style.top = skyHeight;
 }
 
-let cityInput = document.querySelector('.city');
+let cityInput = document.querySelector('.city').value;
 let day = document.querySelector('.day')
 let date_year = document.querySelector('.date');
 let time = document.querySelector('.time');
@@ -166,7 +166,7 @@ if (cityInput === "Belgrade") {
     xhttp.onload = function () {
         
         if (xhttp.readyState === 4 && xhttp.status === 200) {
-            displayResult(JSON.parse(xhttp.responseText));
+          displayResult(JSON.parse(xhttp.responseText));
         }
     }
     xhttp.send();
