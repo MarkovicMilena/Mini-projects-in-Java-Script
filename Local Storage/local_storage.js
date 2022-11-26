@@ -71,9 +71,12 @@ function addTweetsIntolocalStorage(tweets){
  }
 
 function  removeTweetLocalStorage(tweets) {
+
+    console.log(tweets);
     let names = getItemlocalStorage();
 
      let tweetDelete = tweets.substring(0,tweets.length -1 );
+    
 
    
     names.forEach(function(element,index) {

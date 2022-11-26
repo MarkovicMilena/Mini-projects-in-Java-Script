@@ -85,6 +85,8 @@ let course, idCourse;
      course = e.target.parentElement.parentElement;
      idCourse = course.querySelector('a').getAttribute('id');
 
+     console.log(idCourse);
+
          }
     
      //remove from Local Storage
